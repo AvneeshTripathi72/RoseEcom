@@ -83,7 +83,7 @@ export function Navbar() {
               className="w-64 pl-9 rounded-full bg-secondary/50 border-transparent focus-visible:bg-background focus-visible:ring-primary" 
             />
           </div>
-          
+
           <Button variant="ghost" size="icon" className="lg:hidden">
             <Search className="h-5 w-5" />
           </Button>
@@ -110,7 +110,7 @@ export function Navbar() {
                     Shopping Cart (2)
                   </h2>
                 </div>
-                
+
                 <div className="flex-1 overflow-y-auto py-6 space-y-6">
                   <div className="flex gap-4">
                     <div className="w-20 h-20 bg-secondary rounded-lg overflow-hidden border shrink-0">

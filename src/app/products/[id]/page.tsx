@@ -8,7 +8,7 @@ import { prisma } from "@/lib/prisma"
 
 export default async function ProductDetails({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params
-  
+
   const product = await prisma.product.findUnique({
     where: { id: resolvedParams.id },
     include: { category: true }
@@ -47,7 +47,7 @@ export default async function ProductDetails({ params }: { params: Promise<{ id:
         <div className="lg:w-1/2 flex flex-col">
           <div className="mb-2 text-sm text-primary font-medium">{product.category?.name}</div>
           <h1 className="text-4xl font-heading font-bold mb-4">{product.name}</h1>
-          
+
           <div className="flex items-center gap-4 mb-6">
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (

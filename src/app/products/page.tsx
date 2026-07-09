@@ -19,7 +19,7 @@ export default async function ProductsPage() {
           <h1 className="text-3xl font-heading font-bold">All Products</h1>
           <p className="text-muted-foreground mt-1">Showing {products.length} results</p>
         </div>
-        
+
         <div className="flex items-center gap-3 w-full md:w-auto">
           <Button variant="outline" className="md:hidden w-full flex justify-between">
             Filters <SlidersHorizontal className="ml-2 h-4 w-4" />
@@ -47,7 +47,7 @@ export default async function ProductsPage() {
                 ))}
               </div>
             </div>
-            
+
             <div>
               <h3 className="font-semibold mb-4 text-lg">Price Range</h3>
               <div className="space-y-4">

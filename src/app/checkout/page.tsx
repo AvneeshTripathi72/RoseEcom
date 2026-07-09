@@ -28,12 +28,11 @@ export default function CheckoutPage() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-5xl">
       <h1 className="text-3xl font-heading font-bold mb-8">Checkout</h1>
-      
-      {/* Steps Indicator */}
+
       <div className="flex items-center justify-between mb-12 max-w-2xl mx-auto relative">
         <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-border -z-10 -translate-y-1/2"></div>
         <div className="absolute top-1/2 left-0 h-0.5 bg-primary -z-10 -translate-y-1/2 transition-all duration-500" style={{ width: step === 1 ? '0%' : step === 2 ? '50%' : '100%' }}></div>
-        
+
         {[
           { num: 1, label: "Shipping" },
           { num: 2, label: "Payment" },
@@ -125,7 +124,7 @@ export default function CheckoutPage() {
                       <AlertCircle className="h-5 w-5 text-primary shrink-0" />
                       This is a mock checkout. No real money will be charged. Feel free to use test numbers.
                     </div>
-                    
+
                     <form className="space-y-6" onSubmit={handlePayment}>
                       <div className="space-y-2">
                         <Label htmlFor="cardName">Name on Card</Label>
@@ -182,7 +181,6 @@ export default function CheckoutPage() {
           </AnimatePresence>
         </div>
 
-        {/* Order Summary */}
         <div className="lg:w-1/3">
           <Card className="border-none shadow-md sticky top-24 bg-secondary/20">
             <CardHeader>
@@ -190,7 +188,7 @@ export default function CheckoutPage() {
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
-                {/* Mock Items */}
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-white rounded-md border flex items-center justify-center overflow-hidden">
@@ -203,7 +201,7 @@ export default function CheckoutPage() {
                   </div>
                   <span className="font-medium">$299.99</span>
                 </div>
-                
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-white rounded-md border flex items-center justify-center overflow-hidden">
@@ -218,7 +216,7 @@ export default function CheckoutPage() {
                 </div>
 
                 <Separator className="my-4" />
-                
+
                 <div className="space-y-1.5 text-sm">
                   <div className="flex justify-between text-muted-foreground">
                     <span>Subtotal</span>
@@ -235,7 +233,7 @@ export default function CheckoutPage() {
                 </div>
 
                 <Separator className="my-4" />
-                
+
                 <div className="flex justify-between font-bold text-lg">
                   <span>Total</span>
                   <span>$449.98</span>

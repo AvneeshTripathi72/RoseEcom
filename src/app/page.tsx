@@ -20,25 +20,25 @@ export default async function Home() {
     <div className="flex flex-col min-h-screen">
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-background pt-24 pb-32 sm:pt-32 sm:pb-40 lg:pb-48">
         <div className="absolute inset-0 bg-grid-slate-200/20 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:bg-grid-slate-800/20" />
-        
+
         <div className="relative container mx-auto px-4 text-center">
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-primary/10 text-primary mb-8 animate-fade-in-up">
             <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
             New Winter Collection Available
           </div>
-          
+
           <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-foreground mb-6 animate-fade-in-up animation-delay-100">
             Discover Premium <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
               Lifestyle Products
             </span>
           </h1>
-          
+
           <p className="max-w-2xl mx-auto text-lg sm:text-xl text-muted-foreground mb-10 animate-fade-in-up animation-delay-200">
             Elevate your everyday with our curated selection of high-end electronics, 
             apparel, and accessories designed for the modern individual.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-300">
             <Button size="lg" className="rounded-full w-full sm:w-auto text-lg h-14 px-8" asChild>
               <Link href="/products">
@@ -104,7 +104,7 @@ export default async function Home() {
               </Link>
             ))}
           </div>
-          
+
           <Button variant="outline" className="w-full mt-8 md:hidden" asChild>
             <Link href="/products">View all products</Link>
           </Button>

@@ -51,49 +51,43 @@
 }
 
 :root {
-  /* Background: #F8FAFC */
-  --background: #f8fafc;
+    --background: #f8fafc;
   --foreground: #0f172a;
-  
-  /* Cards: White */
-  --card: #ffffff;
+
+    --card: #ffffff;
   --card-foreground: #0f172a;
-  
+
   --popover: #ffffff;
   --popover-foreground: #0f172a;
-  
-  /* Primary: #4F46E5 */
-  --primary: #4f46e5;
+
+    --primary: #4f46e5;
   --primary-foreground: #ffffff;
-  
+
   --secondary: #f1f5f9;
   --secondary-foreground: #0f172a;
-  
+
   --muted: #f1f5f9;
   --muted-foreground: #64748b;
-  
-  /* Accent: #7C3AED */
-  --accent: #7c3aed;
+
+    --accent: #7c3aed;
   --accent-foreground: #ffffff;
-  
-  /* Success: #10B981 */
-  --success: #10b981;
+
+    --success: #10b981;
   --success-foreground: #ffffff;
-  
+
   --destructive: #ef4444;
   --border: #e2e8f0;
   --input: #e2e8f0;
   --ring: #4f46e5;
-  
+
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  
-  /* Radius: 20px */
-  --radius: 1.25rem;
-  
+
+    --radius: 1.25rem;
+
   --sidebar: #ffffff;
   --sidebar-foreground: #0f172a;
   --sidebar-primary: #4f46e5;
@@ -105,43 +99,41 @@
 }
 
 .dark {
-  /* Dark Mode Background: #0F172A */
-  --background: #0f172a;
+    --background: #0f172a;
   --foreground: #f8fafc;
-  
-  /* Dark Cards */
-  --card: #1e293b;
+
+    --card: #1e293b;
   --card-foreground: #f8fafc;
-  
+
   --popover: #1e293b;
   --popover-foreground: #f8fafc;
-  
+
   --primary: #6366f1;
   --primary-foreground: #ffffff;
-  
+
   --secondary: #334155;
   --secondary-foreground: #f8fafc;
-  
+
   --muted: #334155;
   --muted-foreground: #94a3b8;
-  
+
   --accent: #8b5cf6;
   --accent-foreground: #ffffff;
-  
+
   --success: #10b981;
   --success-foreground: #ffffff;
-  
+
   --destructive: #f87171;
   --border: #334155;
   --input: #334155;
   --ring: #6366f1;
-  
+
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  
+
   --sidebar: #1e293b;
   --sidebar-foreground: #f8fafc;
   --sidebar-primary: #6366f1;

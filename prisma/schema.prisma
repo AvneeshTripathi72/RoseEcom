@@ -25,8 +25,6 @@ model User {
   cart          Cart?
 }
 
-
-
 model Product {
   id          String   @id @default(cuid())
   name        String
@@ -34,7 +32,7 @@ model Product {
   price       Float
   discount    Float    @default(0)
   stock       Int
-  images      String   // Storing JSON string of image URLs
+  images      String   
   categoryId  String
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
@@ -65,8 +63,6 @@ model Order {
   items       OrderItem[]
   payment     Payment?
 }
-
-
 
 model OrderItem {
   id        String  @id @default(cuid())
@@ -115,7 +111,7 @@ model WishlistItem {
   id         String   @id @default(cuid())
   wishlistId String
   productId  String
-  
+
   wishlist   Wishlist @relation(fields: [wishlistId], references: [id], onDelete: Cascade)
   product    Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
 }
@@ -148,12 +144,10 @@ model Payment {
   order         Order         @relation(fields: [orderId], references: [id], onDelete: Cascade)
 }
 
-
-
 model Coupon {
   id          String   @id @default(cuid())
   code        String   @unique
-  discount    Float    // percentage or flat amount
+  discount    Float    
   isActive    Boolean  @default(true)
   expiresAt   DateTime?
 }

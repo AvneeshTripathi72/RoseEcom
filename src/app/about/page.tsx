@@ -31,7 +31,7 @@ export default function AboutPage() {
             <h3 className="text-xl font-bold font-heading">Premium Selection</h3>
             <p className="text-muted-foreground">Every product in our catalog is meticulously vetted for quality and design excellence.</p>
           </div>
-          
+
           <div className="bg-card p-8 rounded-2xl border flex flex-col items-center text-center space-y-4 shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary">
               <Shield className="h-8 w-8" />
