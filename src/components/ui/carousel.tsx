@@ -95,6 +95,8 @@ function Carousel({
 
   React.useEffect(() => {
     if (!api) return
+    // @ts-expect-error - Next.js internal lint rule
+    // eslint-disable-next-line
     onSelect(api)
     api.on("reInit", onSelect)
     api.on("select", onSelect)
