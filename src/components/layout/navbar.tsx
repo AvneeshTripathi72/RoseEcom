@@ -96,12 +96,82 @@ export function Navbar() {
             <span className="absolute top-1.5 right-1.5 w-2 h-2 bg-primary rounded-full hidden" />
           </Button>
 
-          <Button variant="ghost" size="icon" className="relative group">
-            <ShoppingBag className="h-5 w-5 group-hover:scale-110 transition-transform" />
-            <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-primary-foreground text-[10px] font-bold rounded-full flex items-center justify-center">
-              0
-            </span>
-          </Button>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="relative group">
+                <ShoppingBag className="h-5 w-5 group-hover:scale-110 transition-transform" />
+                <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-primary-foreground text-[10px] font-bold rounded-full flex items-center justify-center">
+                  2
+                </span>
+              </Button>
+            </SheetTrigger>
+            <SheetContent className="w-full sm:max-w-lg border-l">
+              <div className="flex flex-col h-full">
+                <div className="flex items-center justify-between border-b pb-4 mt-4">
+                  <h2 className="text-xl font-heading font-bold flex items-center gap-2">
+                    <ShoppingBag className="h-5 w-5" />
+                    Shopping Cart (2)
+                  </h2>
+                </div>
+                
+                <div className="flex-1 overflow-y-auto py-6 space-y-6">
+                  {/* Mock Cart Items */}
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-secondary rounded-lg overflow-hidden border shrink-0">
+                      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Product" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="flex-1 flex flex-col justify-between">
+                      <div>
+                        <h4 className="font-medium text-sm line-clamp-1">Premium Wireless Headphones</h4>
+                        <p className="text-xs text-muted-foreground mt-1">Electronics</p>
+                      </div>
+                      <div className="flex items-center justify-between mt-2">
+                        <div className="flex items-center border rounded-md h-8 bg-background">
+                          <button className="px-2 hover:bg-secondary">-</button>
+                          <span className="px-2 text-xs font-medium border-x">1</span>
+                          <button className="px-2 hover:bg-secondary">+</button>
+                        </div>
+                        <span className="font-bold text-sm">$299.99</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="w-20 h-20 bg-secondary rounded-lg overflow-hidden border shrink-0">
+                      <img src="https://images.unsplash.com/photo-1595225476474-87563907a212" alt="Product" className="w-full h-full object-cover" />
+                    </div>
+                    <div className="flex-1 flex flex-col justify-between">
+                      <div>
+                        <h4 className="font-medium text-sm line-clamp-1">Minimalist Mechanical Keyboard</h4>
+                        <p className="text-xs text-muted-foreground mt-1">Electronics</p>
+                      </div>
+                      <div className="flex items-center justify-between mt-2">
+                        <div className="flex items-center border rounded-md h-8 bg-background">
+                          <button className="px-2 hover:bg-secondary">-</button>
+                          <span className="px-2 text-xs font-medium border-x">1</span>
+                          <button className="px-2 hover:bg-secondary">+</button>
+                        </div>
+                        <span className="font-bold text-sm">$149.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-t pt-6 mt-auto">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="font-medium text-muted-foreground">Subtotal</span>
+                    <span className="font-bold text-xl">$449.98</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mb-6">
+                    Shipping, taxes, and discounts calculated at checkout.
+                  </p>
+                  <Button size="lg" className="w-full h-14 text-lg rounded-xl" asChild>
+                    <Link href="/checkout">Proceed to Checkout</Link>
+                  </Button>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
 
           <Button variant="ghost" size="icon" className="hidden sm:inline-flex">
             <User className="h-5 w-5" />
