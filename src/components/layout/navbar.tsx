@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { useTheme } from "next-themes"
 import { motion } from "framer-motion"
 import { Search, ShoppingBag, Heart, User, Sun, Moon, Menu } from "lucide-react"
@@ -32,7 +33,6 @@ export function Navbar() {
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        {/* Mobile Menu */}
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger>
@@ -51,7 +51,6 @@ export function Navbar() {
           </Sheet>
         </div>
 
-        {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <motion.div 
             className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-primary-foreground font-bold font-heading text-xl"
@@ -64,7 +63,6 @@ export function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 font-medium text-sm">
           <Link href="/products" className="hover:text-primary transition-colors">
             Shop
@@ -77,7 +75,6 @@ export function Navbar() {
           </Link>
         </nav>
 
-        {/* Right Actions */}
         <div className="flex items-center gap-2 sm:gap-4">
           <div className="hidden lg:flex items-center relative">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
@@ -115,10 +112,9 @@ export function Navbar() {
                 </div>
                 
                 <div className="flex-1 overflow-y-auto py-6 space-y-6">
-                  {/* Mock Cart Items */}
                   <div className="flex gap-4">
                     <div className="w-20 h-20 bg-secondary rounded-lg overflow-hidden border shrink-0">
-                      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Product" className="w-full h-full object-cover" />
+                      <Image width={80} height={80} src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Product" className="w-full h-full object-cover" />
                     </div>
                     <div className="flex-1 flex flex-col justify-between">
                       <div>
@@ -138,7 +134,7 @@ export function Navbar() {
 
                   <div className="flex gap-4">
                     <div className="w-20 h-20 bg-secondary rounded-lg overflow-hidden border shrink-0">
-                      <img src="https://images.unsplash.com/photo-1595225476474-87563907a212" alt="Product" className="w-full h-full object-cover" />
+                      <Image width={80} height={80} src="https://images.unsplash.com/photo-1595225476474-87563907a212" alt="Product" className="w-full h-full object-cover" />
                     </div>
                     <div className="flex-1 flex flex-col justify-between">
                       <div>

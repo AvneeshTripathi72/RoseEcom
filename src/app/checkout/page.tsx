@@ -4,6 +4,7 @@ import * as React from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { CheckCircle2, CreditCard, Truck, AlertCircle } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -193,7 +194,7 @@ export default function CheckoutPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-white rounded-md border flex items-center justify-center overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Product" className="object-cover w-full h-full" />
+                      <Image src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Product" width={48} height={48} className="object-cover w-full h-full" />
                     </div>
                     <div>
                       <p className="font-medium text-sm">Premium Headphones</p>
@@ -206,7 +207,7 @@ export default function CheckoutPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-white rounded-md border flex items-center justify-center overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1595225476474-87563907a212" alt="Product" className="object-cover w-full h-full" />
+                      <Image src="https://images.unsplash.com/photo-1595225476474-87563907a212" alt="Product" width={48} height={48} className="object-cover w-full h-full" />
                     </div>
                     <div>
                       <p className="font-medium text-sm">Mechanical Keyboard</p>

@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation"
 import Image from "next/image"
-import { Star, Truck, Shield, RotateCcw, Heart, Share2, Plus, Minus } from "lucide-react"
+import { Star, Truck, Shield, RotateCcw, Heart, Plus, Minus } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
@@ -23,7 +23,6 @@ export default async function ProductDetails({ params }: { params: Promise<{ id:
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="flex flex-col lg:flex-row gap-12">
-        {/* Product Images (Left) */}
         <div className="lg:w-1/2 flex flex-col gap-4">
           <div className="relative aspect-square overflow-hidden rounded-2xl bg-white border">
             <Image
@@ -45,7 +44,6 @@ export default async function ProductDetails({ params }: { params: Promise<{ id:
           )}
         </div>
 
-        {/* Product Info (Right) */}
         <div className="lg:w-1/2 flex flex-col">
           <div className="mb-2 text-sm text-primary font-medium">{product.category?.name}</div>
           <h1 className="text-4xl font-heading font-bold mb-4">{product.name}</h1>
@@ -81,7 +79,6 @@ export default async function ProductDetails({ params }: { params: Promise<{ id:
 
           <Separator className="mb-8" />
 
-          {/* Add to Cart Actions */}
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <div className="flex items-center border rounded-lg overflow-hidden h-14 bg-background">
               <Button variant="ghost" size="icon" className="h-full px-4 rounded-none hover:bg-secondary">
@@ -100,7 +97,6 @@ export default async function ProductDetails({ params }: { params: Promise<{ id:
             </Button>
           </div>
 
-          {/* Benefits Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-secondary/30 p-6 rounded-2xl">
             <div className="flex items-start gap-3">
               <Truck className="h-5 w-5 text-primary shrink-0 mt-0.5" />

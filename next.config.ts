@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
     '/api/**/*': ['./prisma/**/*'],
     '/products/**/*': ['./prisma/**/*'],
   },
+  experimental: {},
 };
 
 export default nextConfig;

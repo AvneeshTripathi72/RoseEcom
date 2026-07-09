@@ -34,7 +34,6 @@ export default async function ProductsPage() {
       </div>
 
       <div className="flex flex-col md:flex-row gap-8">
-        {/* Filters Sidebar (Desktop) */}
         <aside className="hidden md:block w-64 shrink-0">
           <div className="space-y-8 sticky top-24">
             <div>
@@ -63,7 +62,6 @@ export default async function ProductsPage() {
           </div>
         </aside>
 
-        {/* Product Grid */}
         <div className="flex-1">
           {products.length === 0 ? (
             <div className="text-center py-20">

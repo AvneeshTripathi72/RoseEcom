@@ -18,7 +18,6 @@ export default async function Home() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-background pt-24 pb-32 sm:pt-32 sm:pb-40 lg:pb-48">
         <div className="absolute inset-0 bg-grid-slate-200/20 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:bg-grid-slate-800/20" />
         
@@ -55,7 +54,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Featured Products */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
@@ -113,7 +111,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Benefits Section */}
       <section className="py-24 bg-secondary/50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
