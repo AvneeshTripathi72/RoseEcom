@@ -35,7 +35,7 @@ export function Navbar() {
         {/* Mobile Menu */}
         <div className="md:hidden">
           <Sheet>
-            <SheetTrigger asChild>
+            <SheetTrigger>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Toggle Menu</span>
@@ -97,7 +97,7 @@ export function Navbar() {
           </Button>
 
           <Sheet>
-            <SheetTrigger asChild>
+            <SheetTrigger>
               <Button variant="ghost" size="icon" className="relative group">
                 <ShoppingBag className="h-5 w-5 group-hover:scale-110 transition-transform" />
                 <span className="absolute -top-1 -right-1 w-4 h-4 bg-primary text-primary-foreground text-[10px] font-bold rounded-full flex items-center justify-center">

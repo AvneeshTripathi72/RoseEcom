@@ -3,6 +3,7 @@
 import * as React from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { CheckCircle2, CreditCard, Truck, AlertCircle } from "lucide-react"
+import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -170,10 +171,10 @@ export default function CheckoutPage() {
                 </div>
                 <h2 className="text-3xl font-heading font-bold mb-4">Payment Successful!</h2>
                 <p className="text-muted-foreground text-lg mb-8 max-w-md mx-auto">
-                  Thank you for your purchase. Your order #ORD-{Math.floor(Math.random() * 100000)} has been placed and is being processed.
+                  Thank you for your purchase. Your order #ORD-84920 has been placed and is being processed.
                 </p>
                 <Button size="lg" className="rounded-full px-8" asChild>
-                  <a href="/products">Continue Shopping</a>
+                  <Link href="/products">Continue Shopping</Link>
                 </Button>
               </motion.div>
             )}
